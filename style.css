@@ -19,10 +19,25 @@ body{
     grid-template-columns: 1fr ;
 }
 
+
+
+
+
 .game-container > .jogador-container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
 }
+
+
+.game-container > .jogador-container > .jogador{
+    transform:rotateY(180deg) ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+
+
 
 .game-container > .jogador-container .opcao >{
 width: 100%;

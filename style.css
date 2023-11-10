@@ -10,6 +10,7 @@ body{
     min-height: 100vh;
     display: grid;
     place-items: center;
+    background-color: rgba(240, 240, 240, 1);
 }
 
 .game-container{
@@ -29,19 +30,31 @@ body{
 }
 
 
-.game-container > .jogador-container > .jogador{
-    transform:rotateY(180deg) ;
+.game-container > .jogador-container > .div{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+    transition: 0.5s;
 }
 
+.game-container > .jogador-container > .jogador{
+    transform:rotateY(180deg) ;
+   
+}
 
+.game-container > .jogador-container > .jogador > .opcao{
+    cursor: pointer;
 
+}
+
+.game-container > .jogador-container > .jogador > .opcao{
+    opacity: 1;
+}
 
 .game-container > .jogador-container .opcao >{
 width: 100%;
 max-width: 150px;
+opacity: 0.5;
 }
 
 

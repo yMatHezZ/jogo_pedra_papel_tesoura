@@ -12,4 +12,38 @@ body{
     place-items: center;
 }
 
+.game-container{
+    width: 100%;
+    max-width: 480px;
+    display: grid;
+    grid-template-columns: 1fr ;
+}
 
+.game-container > .jogador-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.game-container > .jogador-container .opcao >{
+width: 100%;
+max-width: 150px;
+}
+
+
+
+
+.game-container > .jogador-container .opcao > img{
+ width: 100%;
+ object-fit: contain;
+}
+
+
+
+
+
+.game-container > .resultado-container{
+    padding: 16px;
+    text-align: center ;
+    font-size: 22px ;
+    color: rgba(60, 60, 1);
+}

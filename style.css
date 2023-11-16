@@ -22,8 +22,6 @@ body{
 
 
 
-
-
 .game-container > .jogador-container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -47,7 +45,7 @@ body{
 
 }
 
-.game-container > .jogador-container > .jogador > .opcao{
+.game-container > .jogador-container > .jogador > .opcao:hover{
     opacity: 1;
 }
 
@@ -55,18 +53,14 @@ body{
 width: 100%;
 max-width: 150px;
 opacity: 0.5;
+transition: 0.5s;
 }
-
-
 
 
 .game-container > .jogador-container .opcao > img{
  width: 100%;
  object-fit: contain;
 }
-
-
-
 
 
 .game-container > .resultado-container{

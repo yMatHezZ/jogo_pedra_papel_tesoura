@@ -39,4 +39,17 @@ const iaEnemy = () => {
   
     if (movePlayer === moveEnemy) {
       resultElement.textContent = "Você empatou 😢";
-   
+    } else if (
+        (movePlayer === "stone" && moveEnemy === "paper") ||
+        (movePlayer === "paper" && moveEnemy === "scissor") ||
+        (movePlayer === "scissor" && moveEnemy === "stone")
+      ) {
+        resultElement.textContent = "Você perdeu 😭";
+      } else if (
+        (movePlayer === "stone" && moveEnemy === "scissor") ||
+        (movePlayer === "paper" && moveEnemy === "stone") ||
+        (movePlayer === "scissor" && moveEnemy === "paper")
+      ) {
+        resultElement.textContent = "Você ganhou 🥲";
+      }
+    };

@@ -27,3 +27,16 @@ const iaEnemy = () => {
   
     return optionSelected.getAttribute("data-value");
   };
+  const clearOptions = (optionsList) => {
+    optionsList.forEach((option) => {
+      option.setAttribute("data-selected", "false");
+      option.style.opacity = "0.5";
+    });
+  };
+  
+  const result = (movePlayer, moveEnemy) => {
+    const resultElement = document.querySelector(".result-container span");
+  
+    if (movePlayer === moveEnemy) {
+      resultElement.textContent = "Você empatou 😢";
+   

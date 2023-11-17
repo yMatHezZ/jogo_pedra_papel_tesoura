@@ -15,3 +15,15 @@ playerOptionsList.forEach((option) => {
       result(movePlayer, moveEnemy);
   };
 });
+
+const iaEnemy = () => {
+    const optionRandom = Math.floor(Math.random() * enemyOptionsList.length);
+    const optionSelected = enemyOptionsList[optionRandom];
+  
+    clearOptions(enemyOptionsList);
+  
+    optionSelected.style.opacity = "1";
+    optionSelected.setAttribute("data-selected", "true");
+  
+    return optionSelected.getAttribute("data-value");
+  };

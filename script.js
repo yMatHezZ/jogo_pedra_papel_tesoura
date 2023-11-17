@@ -1,4 +1,4 @@
-const playerOptionsList = document.querySelectorAll(".jogador .option");
+const playerOptionsList = document.querySelectorAll(".player .option");
 const enemyOptionsList = document.querySelectorAll(".enemy .option");
 
 playerOptionsList.forEach((option) => {

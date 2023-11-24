@@ -50,6 +50,6 @@ const iaEnemy = () => {
         (movePlayer === "paper" && moveEnemy === "stone") ||
         (movePlayer === "scissor" && moveEnemy === "paper")
       ) {
-        resultElement.textContent = "Você ganhou 🥲";
+        resultElement.textContent = "Você ganhou 😊";
       }
     };
